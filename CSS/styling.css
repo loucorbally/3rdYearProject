@@ -2,7 +2,7 @@
 
 .navbar {
     overflow: hidden;
-    background-color: #41dff4;
+    background-color: #333;
     font-family: Arial;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(0, 255, 179);
+    background-color: red;
 }
 
 .dropdown-content {
@@ -62,22 +62,23 @@
 
 
 
+}
 
-/* Create two equal columns that floats next to each other */
 
-* {
+.row {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
 }
+
+/* Create four equal columns that floats next to each other */
 .column {
-    float: left;
+   float: left; 
     width: 25%;
     padding: 10px;
-    height: 400px; /* Should be removed. Only for demonstration */
-    border-left: 3px solid #dddddd;
+
 }
 
 /* Clear floats after the columns */
@@ -87,14 +88,13 @@ body {
     clear: both;
 }
 
-
 /* Footer */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: lightblue;
+    background-color: red;
     color: white;
     text-align: center;
  }
