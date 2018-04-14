@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lamp Genie</title>
+<link rel="stylesheet" href="css/styling.css">
+<link rel="JavaScript" href="JS\index.js">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/uikit.min.css" />
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+
+	
+    <!-- Navbar -->
+	<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				<a class="navbar-brand" href="#">The Lamp Genie</a>
+			  </div>
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">Contact</a></li>
+				
+			  </ul>
+			</div>
+		  </nav>
+
+
+
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="shop.html" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<div class="footer">
+		<p>The Lamp Genie 2018</p>
+	  </div>
+
+</body>
+</html>	

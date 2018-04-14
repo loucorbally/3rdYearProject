@@ -1,191 +1,147 @@
-<!-- Louise Corbally
-	G00313361 -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>The Lamp Genie</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript">
-        $(document).ready(function() {
-            $(".dropdown img.flag").addClass("flagvisibility");
+<title>Lamp Genie</title>
+<link rel="stylesheet" href="css/styling.css">
+<link rel="JavaScript" href="JS\index.js">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/uikit.min.css" />
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+</head>
 
-            $(".dropdown dt a").click(function() {
-                $(".dropdown dd ul").toggle();
-            });
-                        
-            $(".dropdown dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".dropdown dt a span").html(text);
-                $(".dropdown dd ul").hide();
-                $("#result").html("Selected value is: " + getSelectedValue("sample"));
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("dropdown"))
-                    $(".dropdown dd ul").hide();
-            });
-
-
-            $("#flagSwitcher").click(function() {
-                $(".dropdown img.flag").toggleClass("flagvisibility");
-            });
-        });
-     </script>
- </head>
 <body>
-	<div class="header">
-		<div class="container">
-			<div class="row">
-			  <div class="col-md-12">
-				 <div class="header-left">
-					 <div class="logo">
-						<a href="index.html"><img src="images/logo.png" alt=""/></a>
-					 </div>
-					 <div class="menu">
-						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-						    <ul class="nav" id="nav">
-						    	<li><a href="shop.html">Shop</a></li>
-						    	<li><a href="team.html">Team</a></li>
-						    	<li><a href="shop.html">Events</a></li>
-						    	<li><a href="experiance.html">Experiance</a></li>
-						    	<li><a href="shop.html">Company</a></li>
-								<li><a href="contact.html">Contact</a></li>								
-								<div class="clear"></div>
-							</ul>
-							<script type="text/javascript" src="js/responsive-nav.js"></script>
-				    </div>							
-	    		    <div class="clear"></div>
-	    	    </div>
-	            <div class="header_right">
-	    		  <!-- start search-->
-				   <div class="search-box">
-							<div id="sb-search" class="sb-search">
-								<form>
-									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-									<input class="sb-search-submit" type="submit" value="">
-									<span class="sb-icon-search"> </span>
-								</form>
-							</div>
-						</div>
-						<!----search-scripts---->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-				    <ul class="icon1 sub-icon1 profile_img">
-					 <li><a class="active-icon c1" href="#"> </a>
-						<ul class="sub-icon1 list">
-						  <div class="product_control_buttons">
-						  	<a href="#"><img src="images/edit.png" alt=""/></a>
-						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
-						  </div>
-						   <div class="clear"></div>
-						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
-						  <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
-                          $12.00</span></li>
-						  <div class="login_buttons">
-							 <div class="check_button"><a href="checkout.html">Check out</a></div>
-							 <div class="login_button"><a href="login.html">Login</a></div>
-							 <div class="clear"></div>
-						  </div>
-						  <div class="clear"></div>
-						</ul>
-					 </li>
-				   </ul>
-		        <div class="clear"></div>
-	       </div>
-	      </div>
-		 </div>
-	    </div>
-	  </div>
-     <div class="main">
-      <div class="shop_top">
-		<div class="container">
-			<h4 class="title">Shopping cart is empty</h4>
-			<p class="cart">You have no items in your shopping cart.<br>Click<a href="index.html"> here</a> to continue shopping</p>
-	     </div>
-	   </div>
-	  </div>
-	  <div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Products</h4>
-							<li><a href="#">Mens</a></li>
-							<li><a href="#">Womens</a></li>
-							<li><a href="#">Youth</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>About</h4>
-							<li><a href="#">Careers and internships</a></li>
-							<li><a href="#">Sponserships</a></li>
-							<li><a href="#">team</a></li>
-							<li><a href="#">Catalog Request/Download</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Customer Support</h4>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Shipping and Order Tracking</a></li>
-							<li><a href="#">Easy Returns</a></li>
-							<li><a href="#">Warranty</a></li>
-							<li><a href="#">Replacement Binding Parts</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Newsletter</h4>
-							<div class="footer_search">
-				    		   <form>
-				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
-				    			<input type="submit" value="Go">
-				    		   </form>
-					        </div>
-							<ul class="social">	
-							  <li class="facebook"><a href="#"><span> </span></a></li>
-							  <li class="twitter"><a href="#"><span> </span></a></li>
-							  <li class="instagram"><a href="#"><span> </span></a></li>	
-							  <li class="pinterest"><a href="#"><span> </span></a></li>	
-							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
-						    </ul>
-		   				</ul>
-					</div>
-				</div>
-				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-		            </div>
-					  <dl id="sample" class="dropdown">
-				        <dt><a href="#"><span>Change Region</span></a></dt>
-				        <dd>
-				            <ul>
-				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
-				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
-				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
-				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
-				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
-				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
-				            </ul>
-				         </dd>
-	   				  </dl>
-   				</div>
+
+
+	
+    <!-- Navbar -->
+	<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				<a class="navbar-brand" href="#">The Lamp Genie</a>
+			  </div>
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">Contact</a></li>
+				
+			  </ul>
 			</div>
-		</div>
-</body>	
-</html>
+		  </nav>
+
+
+	<div id="content">
+		<h1>Checkout</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" method="post" id="checkout-order-form">
+		 	<h2>Your Details</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Billing</legend>
+		 		<div>
+		 			<label for="name">Name</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="city">City</label>
+		 			<input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Address</label>
+		 			<input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">ZIP Code</label>
+		 			<input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="country">Country</label>
+		 			<select name="country" id="country" data-type="string" data-message="This field cannot be empty">
+		 				<option value="">Select</option>
+						 <option value="IE">Ireland</option>
+		 				<option value="US">USA</option>
+						 <option value="IT">Italy</option>
+						 <option value="UK">United Kingdom</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<div id="shipping-same">Same as Billing <input type="checkbox" id="same-as-billing" value=""/></div>
+		 	
+		 	<fieldset id="fieldset-shipping">
+		 		
+		 		<legend>Shipping</legend>
+		 		
+		 		<div>
+		 			<label for="sname">Name</label>
+		 			<input type="text" name="sname" id="sname" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="semail">Email</label>
+		 			<input type="text" name="semail" id="semail" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="scity">City</label>
+		 			<input type="text" name="scity" id="scity" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="saddress">Address</label>
+		 			<input type="text" name="saddress" id="saddress" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="szip">ZIP Code</label>
+		 			<input type="text" name="szip" id="szip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="scountry">Country</label>
+		 			<select name="scountry" id="scountry" data-type="string" data-message="This field cannot be empty">
+						 <option value="">Select</option>
+						 <option value="IE">Ireland</option>
+		 				<option value="US">USA</option>
+						 <option value="IT">Italy</option>
+						 <option value="UK">United Kingdom</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<p><input type="submit" id="submit-order" value="Submit" class="btn" /></p>
+		 
+		 </form>
+	</div>
+	
+
+<br>
+
+	<div class="footer">
+			<p>The Lamp Genie 2018</p>
+		  </div>
+</body>
+</html>	

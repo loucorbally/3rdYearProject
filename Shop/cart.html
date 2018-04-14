@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Lamp Genie</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+
+<body>
+
+
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li>
+				<li>
+					<a href="index.html" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="footer_box">
+					<h4>Products</h4>
+					<li><a href="shop.html">Lamps</a></li>
+					<li><a href="shop.html">Woodwork</a></li>
+					<li><a href="shop.html">CandyCarts</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="footer_box">
+					<h4>Customer Support</h4>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="footer_box">
+					<h4>Newsletter</h4>
+					<div class="footer_search">
+					   <form>
+						<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+						<input type="submit" value="Go">
+					   </form>
+					</div>
+					<ul class="social">	
+					  <li class="facebook"><a href="#"><span> </span></a></li>
+					  <li class="twitter"><a href="#"><span> </span></a></li>
+					  <li class="instagram"><a href="#"><span> </span></a></li>	
+					  <li class="pinterest"><a href="#"><span> </span></a></li>	
+					  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+					</ul>
+					   
+				</ul>
+			</div>
+		</div>
+		<div class="row footer_bottom">
+			<div class="copy">
+			   <p>© 2018 TheLampGenie</p>
+			</div>
+			  
+		   </div>
+	</div>
+</div>
+<!-- Footer End -->
+</body>	
+</html>
+
+</body>
+</html>	

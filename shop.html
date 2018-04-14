@@ -1,48 +1,48 @@
-<!-- Louise Corbally
-	G00313361 -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>The Lamp Genie</title>
+<title>The Lamp Genie</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
-<script type="text/javascript">
-        $(document).ready(function() {
-            $(".dropdown img.flag").addClass("flagvisibility");
+<script type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" /> 
+    <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+   <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+   <!-- Latest compiled and minified JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- ANIMATE STYLE  -->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!-- FLEXSLIDER STYLE  -->
+    
+    <link href="assets/css/flexslider.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 
-            $(".dropdown dt a").click(function() {
-                $(".dropdown dd ul").toggle();
-            });
-                        
-            $(".dropdown dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".dropdown dt a span").html(text);
-                $(".dropdown dd ul").hide();
-                $("#result").html("Selected value is: " + getSelectedValue("sample"));
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("dropdown"))
-                    $(".dropdown dd ul").hide();
-            });
-
-
-            $("#flagSwitcher").click(function() {
-                $(".dropdown img.flag").toggleClass("flagvisibility");
-            });
-        });
-     </script>
 </head>
+
 <body>
 	<div class="header">
 		<div class="container">
@@ -54,15 +54,12 @@
 					 </div>
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-						    <ul class="nav" id="nav">
-						    	<li class="current"><a href="shop.html">Shop</a></li>
-						    	<li><a href="team.html">Team</a></li>
-						    	<li><a href="experiance.html">Events</a></li>
-						    	<li><a href="experiance.html">Experiance</a></li>
-						    	<li><a href="shop.html">Company</a></li>
-								<li><a href="contact.html">Contact</a></li>								
-								<div class="clear"></div>
-							</ul>
+						  <ul class="nav" id="nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="contact.html">Contact</a></li>								
+							<div class="clear"></div>
+						</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
 				    </div>							
 	    		    <div class="clear"></div>
@@ -109,151 +106,140 @@
 	      </div>
 		 </div>
 	    </div>
-	  </div>
-     <div class="main">
-      <div class="shop_top">
-		<div class="container">
-			<div class="row shop_box-top">
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="images/pic5.jpg" class="img-responsive" alt=""/>
-					<span class="new-box">
-						<span class="new-label">NEW</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">Paddys Irish Flag</a></h3>
-						<p>An original Paddys Lamp with Irish coloured stones.</p>
-						
-						<span class="actual">€45.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="images/pic6.jpg" class="img-responsive" alt=""/>
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">After Shock LED</a></h3>
-						<p>After Shock Lamp with LED lights, perfect for the festive period</p>
-						<span class="actual">€45.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="images/pic7.jpg" class="img-responsive" alt=""/>
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">Vodka Lamp</a></h3>
-						<p>Lamp made for vodka lovers, </p>
-						<span class="actual">€45.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
-				<div class="col-md-3 shop_box"><a href="single.html">
-					<img src="images/pic8.jpg" class="img-responsive" alt=""/>
-					<span class="new-box">
-						<span class="new-label">New</span>
-					</span>
-					<div class="shop_desc">
-						<h3><a href="#">Blue Saphire Gin Lamp</a></h3>
-						<p>Made with all gin lovers in mind</p>
-						<span class="actual">€45.00</span><br>
-						<ul class="buttons">
-							<li class="cart"><a href="#">Add To Cart</a></li>
-							<li class="shop_btn"><a href="#">Read More</a></li>
-							<div class="clear"> </div>
-					    </ul>
-				    </div>
-				</a></div>
+         
+                </a>
+                </div>
+
+
+<!-- Menu Bar End -->	
+
+
+ <div id="content">
+		<div id="products">
+			<ul>
+				<li>
+			<div class="product-image">
+						<img src="images/Paddy1.JPG" alt="" class="img-fluid" alt="Responsive image"/>
+					</div>
+					<div class="product-description" data-name="Boxing Gloves" data-price="20">
+						<h3 class="product-name">Paddys Irish Flag</h3>
+						<p class="product-price">&euro; 45</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+                
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/Vodka1.JPG" alt="" class="img-fluid" alt="Responsive image" />
+					</div>
+					<div class="product-description" data-name="T-Shirt" data-price="13">
+						<h3 class="product-name">Vodka Lamp</h3>
+						<p class="product-price">&euro; 13</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+                    </div>
+				</li>
+				
+				<li>
+				<div class="product-image">
+						<img src="images/AF1.JPG" alt="" class="img-fluid" alt="Responsive image" />
+					</div>
+					<div class="product-description" data-name="Hoodie" data-price="15">
+						<h3 class="product-name">Blue Saphire Gin Lamp</h3>
+						<p class="product-price">&euro; 15</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-3">Quantity</label>
+								<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+
+
+				
+			</ul>
+		</div>
+	</div>
+	
+	
+
+</div>
+
+<!--Footer Section -->
+<div class="footer-sec">
+         <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+
+
+              
+										<!--SET-DIV SECTION END-->
+<!-- Footer -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="footer_box">
+					<h4>Products</h4>
+					<li><a href="shop.html">Lamps</a></li>
+					<li><a href="shop.html">Woodwork</a></li>
+					<li><a href="shop.html">CandyCarts</a></li>
+				</ul>
 			</div>
-		
+			<div class="col-md-3">
+				<ul class="footer_box">
+					<h4>Customer Support</h4>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
 			</div>
-		 </div>
-	   </div>
-	  </div>
-	  <div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Products</h4>
-							<li><a href="#">Mens</a></li>
-							<li><a href="#">Womens</a></li>
-							<li><a href="#">Youth</a></li>
-						</ul>
+			<div class="col-md-3">
+				<ul class="footer_box">
+					<h4>Newsletter</h4>
+					<div class="footer_search">
+					   <form>
+						<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+						<input type="submit" value="Go">
+					   </form>
 					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>About</h4>
-							<li><a href="#">Careers and internships</a></li>
-							<li><a href="#">Sponserships</a></li>
-							<li><a href="#">team</a></li>
-							<li><a href="#">Catalog Request/Download</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Customer Support</h4>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Shipping and Order Tracking</a></li>
-							<li><a href="#">Easy Returns</a></li>
-							<li><a href="#">Warranty</a></li>
-							<li><a href="#">Replacement Binding Parts</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Newsletter</h4>
-							<div class="footer_search">
-				    		   <form>
-				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
-				    			<input type="submit" value="Go">
-				    		   </form>
-					        </div>
-							<ul class="social">	
-							  <li class="facebook"><a href="#"><span> </span></a></li>
-							  <li class="twitter"><a href="#"><span> </span></a></li>
-							  <li class="instagram"><a href="#"><span> </span></a></li>	
-							  <li class="pinterest"><a href="#"><span> </span></a></li>	
-							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
-						    </ul>
-		   					
-						</ul>
-					</div>
-				</div>
-				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-		            </div>
-					  <dl id="sample" class="dropdown">
-				        <dt><a href="#"><span>Change Region</span></a></dt>
-				        <dd>
-				            <ul>
-				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
-				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
-				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
-				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
-				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
-				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
-				            </ul>
-				         </dd>
-	   				  </dl>
-   				</div>
+					<ul class="social">	
+					  <li class="facebook"><a href="#"><span> </span></a></li>
+					  <li class="twitter"><a href="#"><span> </span></a></li>
+					  <li class="instagram"><a href="#"><span> </span></a></li>	
+					  <li class="pinterest"><a href="#"><span> </span></a></li>	
+					  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+					</ul>
+					   
+				</ul>
 			</div>
 		</div>
-</body>	
+		<div class="row footer_bottom">
+			<div class="copy">
+			   <p>© 2018 TheLampGenie</p>
+			</div>
+			  
+		   </div>
+	</div>
+</div>
+<!-- Footer End -->
+
+     
+     <!--FOOTER SECTION END-->
+      <!-- WE PUT SCRIPTS AT THE END TO LOAD PAGE FASTER-->
+
+
 </html>
