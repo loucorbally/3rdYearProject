@@ -1,0 +1,158 @@
+<!-- Louise Corbally
+	G00313361 -->
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <title>The Lamp Genie</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $(".dropdown img.flag").addClass("flagvisibility");
+    
+                $(".dropdown dt a").click(function() {
+                    $(".dropdown dd ul").toggle();
+                });
+                            
+                $(".dropdown dd ul li a").click(function() {
+                    var text = $(this).html();
+                    $(".dropdown dt a span").html(text);
+                    $(".dropdown dd ul").hide();
+                    $("#result").html("Selected value is: " + getSelectedValue("sample"));
+                });
+                            
+                function getSelectedValue(id) {
+                    return $("#" + id).find("dt a span.value").html();
+                }
+    
+                $(document).bind('click', function(e) {
+                    var $clicked = $(e.target);
+                    if (! $clicked.parents().hasClass("dropdown"))
+                        $(".dropdown dd ul").hide();
+                });
+    
+    
+                $("#flagSwitcher").click(function() {
+                    $(".dropdown img.flag").toggleClass("flagvisibility");
+                });
+            });
+         </script>
+     </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                     <div class="header-left">
+                         <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                         </div>
+                         <div class="menu">
+                              <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+                                    <ul class="nav" id="nav">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="contact.html">Contact</a></li>		
+                                        <li><a href="about.html">About</a></li>						
+                                        <div class="clear"></div>
+                                    </ul>
+                                <script type="text/javascript" src="js/responsive-nav.js"></script>
+                        </div>							
+                        <div class="clear"></div>
+                    </div>
+                    <div class="header_right">
+                      <!-- start search-->
+                     
+                            <!--search-scripts-->
+                            <script src="js/classie.js"></script>
+                            <script src="js/uisearch.js"></script>
+                            <script>
+                                new UISearch( document.getElementById( 'sb-search' ) );
+                            </script>
+                        
+                    <div class="clear"></div>
+               </div>
+              </div>
+             </div>
+            </div>
+          </div>
+          <br>
+          <div class="main">
+            <div class="shop_top">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-7">
+                        <div class="map">
+                            <img src="images/family1.jpg" alt="" />
+                        </div>
+                      </div>
+<!--About Section -->
+<div class="col-md-5">
+    <h1>Get to know The Lamp Genie</h1>
+    <p class="m_8">The Lamp Genie was created for those who enjoy the uniqueness of handmade art. It started off as a hobby however, I quickly discoverd that it could be more than just that, it could be a lifeline. I have sold lamps to many different cultures all over the world. <br><br><br>
+        The Lamp Genie has quickly turned into a family business, there is something for everyone to do. I create the lamps and do all the physical work, my son labels them so we know which lamp belongs to who, my daughter does all of the technical work such as email correspondence and processing online orders 
+        and my wife does the package and posting. 
+    </p>
+    
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+        <!-- Footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Products</h4>
+							<li><a href="shop.html">Lamps</a></li>
+							<li><a href="shop.html">Woodwork</a></li>
+							<li><a href="shop.html">CandyCarts</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2018 TheLampGenie</p>
+		            </div>
+					  
+   				</div>
+			</div>
+		</div>
+		<!-- Footer End -->
+</body>	
+</html>

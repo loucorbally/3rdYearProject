@@ -41,7 +41,8 @@
                 $(".dropdown img.flag").toggleClass("flagvisibility");
             });
         });
-     </script>
+	 </script>
+	 
  </head>
 <body>
 	<div class="header">
@@ -57,7 +58,8 @@
 								<ul class="nav" id="nav">
 									<li><a href="index.html">Home</a></li>
 									<li><a href="shop.html">Shop</a></li>
-									<li><a href="contact.php">Contact</a></li>								
+									<li><a href="contact.html">Contact</a></li>	
+									<li><a href="about.html">About</a></li>							
 									<div class="clear"></div>
 								</ul>
 							<script type="text/javascript" src="js/responsive-nav.js"></script>
@@ -92,7 +94,7 @@
 				</div>
 <!--About Section -->
 				<div class="col-md-5">
-					<p class="m_8">The Lamp Genie was created for those who enjoy the uniqueness of handmade art. It started off as a hobby however, I quickly discoverd that it could be more than just that, it would be a lifeline. I have sold lamps to many different cultures all over the world.</p>
+					<p class="m_8">If you have any queries or questions about our products, don't hesitate to contact us.</p>
 					<div class="address">
 				                <p></p>
 								   <p>Shantalla,</p>
@@ -105,34 +107,35 @@
 				</div>
 			</div>
 			<!-- Client Form -->
-			<form action="contact.php" method="post">
+			<form action="contact.php" id="contactform" method="post">
 				<div class="container">
 				  <h1>Sign up to recieve emails about new products</h1>
 				 
-				  <hr>
-			  
-
-				  <label for="name"><b>Name</b></label>
-				  <input type="text" placeholder="Enter Name" name="client_name" required>
-
-				  <label for="email"><b>Email</b></label>
-				  <input type="text" placeholder="Enter Email" name="client_email" required>
-			  
-				  <label for="contact"><b>Contact Number</b></label>
-				  <input type="text" placeholder="Enter Contact Number" name="client_contact" required>
 				  
-				  <label>
-					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-				  </label>
 			  
-				  <div class="clearfix">
-					<button type="button" class="cancelbtn">Cancel</button>
-					<button type="submit" class="signupbtn">Sign Up</button>
-				  </div>
-				</div>
-			  </form>
-	   </div>
+
+				  <div class="contact-form">
+					  <div>
+						<form action="contact.php">
+						  <label for="client_name">Name:</label>
+						  <input class="contact-form" type="text" id="client_name" name="client_name" placeholder="Your name..">
+					  
+						  <label for="client_email">E-mail:</label>
+						  <input type="text" id="client_email" name="client_email" placeholder="Your email address..">
+
+						  <label for="client_contact">Contact Number:</label>
+						  <input type="text" id="client_contact" name="client_contact" placeholder="Your contact number..">
+						
+						  <input class="contact-form" type="submit" value="Submit">
+						</form>
+					  </div>
+					</div>
+					</div>
+					
 	  </div>
+
+	  <br>
+	  <br>
 	  <div class="footer">
 			<div class="container">
 				<div class="row">

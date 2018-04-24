@@ -829,6 +829,7 @@ p.m_5{
 .footer{
 	background:#000;
 	padding:5% 0;
+	
 }		
 ul.footer_box{
 	list-style:none;
@@ -840,12 +841,14 @@ ul.footer_box h4{
 	text-transform:uppercase;
 	font-weight:700;
 	margin-bottom: 8%;
+	
 }
 ul.footer_box li a{
 	color: #B8B6B6;
 	font-size: 0.8125em;
 	text-decoration:none;
 	line-height: 2em;
+	
 }
 ul.footer_box li a:hover{
 	color:#fff;
